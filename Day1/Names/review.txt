@@ -1,0 +1,38 @@
+review1:
+
+	the variable name is too short and does not explain what it is for when you first see it.
+	better solution would be to name it fully (in camel case) what it is, for eg. int elapsedTimeInDays
+	
+review2:
+	
+	variable name does not show what kind of data we get from the database
+	better solution would be to name it listOfEmployeesFromDb
+	
+review3:
+	
+	variable names should not have abbreviations unless they are well known, that includes the data type
+	better solution would be to just name them the names: counter, fullName, modifiedDate; instead of adding an abbreviation of the data type as well 
+
+review4:
+
+	parameter variable names need to be clear that they are parameters, instead of adding only a p as that causes ambiguity
+	better solution would be to name it paramDay and paramAmount so that it is clear that they are parameters
+
+review5:
+
+	all names follow different naming conventions, which causes inconsistency and does not tell which name is for a variable and which is for a function, etc.
+	better solution would be to stick to one naming convention for each different code part,
+	const int DAYS_IN_WEEK
+	var songs
+	bool EraseDatabase() {}
+	class Alpaca {}
+
+review6:
+
+	method names are ambiguous, and do not tell what the get; set; functions are for.
+	better solution would be to change the name to startWorkDate and modificationTime
+
+review7:
+	
+	none of the variables are in camel case, which disrupts the decided naming convention for variable names.
+	better solution would be to name it employeePhone, workingDays, and workingHours

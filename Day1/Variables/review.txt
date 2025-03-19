@@ -1,0 +1,92 @@
+review1:
+	if (!string.IsNullOrEmpty(day)) (CC = 1)
+	{
+		day = day.ToLower();
+		if (day == "friday")  (CC = 2)
+		{
+			return true;
+		}
+		else if (day == "saturday")  (CC = 3)
+		{
+			return true;
+		}
+		else if (day == "sunday")  (CC = 3)
+		{
+			return true;
+		}
+		else  (CC = 2)
+		{
+			return false;
+		}
+	}
+	else  (CC = 1)
+	{
+		return false;
+	}
+	Summing these points, the cognitive complexity of the IsShopOpen method is 12.
+	
+review3: 
+	if (n < 50) (CC = 1)
+	{
+		if (n != 0) (CC = 2)
+		{
+			if (n != 1) (CC = 3)
+			{
+				return Fibonacci(n - 1) + Fibonacci(n - 2);
+			}
+			else (CC = 3)
+			{
+				return 1;
+			}
+		}
+		else (CC = 2)
+		{
+			return 0;
+		}
+	}
+	else (CC = 1)
+	{
+		throw new System.Exception("Not supported");
+	}
+	Summing these points, the cognitive complexity of the Fibonacci method is 12.
+
+review4:
+	for (var i = 0; i < l.Count(); i++) (CC = 1)
+	{
+		var li = l[i];
+		DoStuff(); (CC = 2)
+		DoSomeOtherStuff(); (CC = 2)
+
+		// ...
+		// ...
+		// ...
+		// Wait, what is `li` for again?
+		Dispatch(li); (CC = 2)
+	}
+	Summing these points, the cognitive complexity of the method is 7.
+
+review5:
+	if (userRole == 8) (CC = 1)
+	{
+		
+	}
+	Summing these points, the cognitive complexity of the method is 1.
+
+review6:
+	public class Car
+	{
+		public string CarMake { get; set; } (CC = 0)
+		public string CarModel { get; set; } (CC = 0)
+		public string CarColor { get; set; } (CC = 0)
+
+		//...
+	}
+	Summing these points, the cognitive complexity of the method is 0.
+
+review9:
+	public void CreateMicrobrewery(string name = null)
+	{
+		var breweryName = !string.IsNullOrEmpty(name) ? name : "Hipster Brew Co.";
+		// ...
+	}
+	Summing these points, the cognitive complexity of the method is 2.	
